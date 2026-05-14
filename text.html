@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsible web design</title>
+    <style>
+        .box{
+            background: tomato;
+            padding:50px ;
+            border-radius: 12px;
+            font-size: 20px;
+            
+            @media screen and {min-width: 768px} and {max-width: 1024px} {
+                background: #0b1d2a;
+                color: white;
+                font-size: 30px;
+                
+            }
+
+            @media screen and {min-width: 1025px} {
+                background: pink;
+                color: white;
+                font-size: 40px;
+                
+            }
+        }
+        .box:hover{
+            background: #0b1d2a;
+            color: white;
+            font-size: 30px;
+        }
+        header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 6px;
+        }
+        /* nav a{
+            text-decoration: none;
+            color: black;
+            margin: 0 10px;
+        } */
+        nav{
+            display: flex;
+            gap: 12px;
+            background: black;
+            padding: 12px;
+            flex-direction: column;
+            position: absolute;
+            width: 90%;
+            left: 5%;
+            border-radius: 12px;
+            top: 20px;
+            transform: translate(200%);
+            transition: .5s;
+            /* border-bottom: 5px solid blue; */
+            @media screen and (min-width: 768px) {
+                display: flex;
+                position: static;
+                width: auto;
+                flex-direction: row;
+                background: transparent;
+                transform: translate(0);
+            }
+        }
+        header button{
+            display: flex;
+            @media screen and (min-width: 768px) {
+                display: none;
+                
+            }
+            /* padding: 10px 20px;
+            background: transparent;
+            border: 1px solid black;
+            cursor: pointer; */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>SCHOOL</h1>
+        <nav>
+            <a href="">link</a>
+            <a href="">link</a>
+            <a href="">link</a>
+            <a href="">link</a>
+        </nav>
+        <button type="button">MENU</button>
+    </header>
+   <div class="box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque quia ad, minima sit, velit rem consequuntur animi delectus, repudiandae quisquam vel enim atque hic necessitatibus. Cupiditate unde inventore aliquam laborum!
+   </div> 
+</body>
+</html>

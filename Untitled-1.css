@@ -1,0 +1,45 @@
+<!-- image settings -->
+ background-position:;
+            background-size:cover ;
+            background-repeat: no-repeat;
+            object-fit: cover;
+            position: relative;
+            left: 269.56px;
+            bottom: 20px;
+
+            <!-- image fit -->
+             .hero-image {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end; /* pushes image to the right */
+}
+
+.hero-image img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+}
+<!-- text glow -->
+@keyframes glow {
+  0% {
+    text-shadow: 0 0 5px #00ffcc;
+  }
+  100% {
+    text-shadow: 0 0 20px #00ffcc;
+  }
+}
+
+.glow {
+  color: white;
+  animation: glow 1s infinite alternate;
+}
+
+ animation-name: glow;
+            animation-duration: 2s;
+             @keyframes glow{
+          0%{
+            text-shadow:0 0 2px #FFC107 ;
+          }
+          100%{
+            text-shadow: 0 0 10px #FFC107;
+          }  
