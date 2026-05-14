@@ -1,2 +1,1 @@
-# project-1
-.
+git hub my guy
